@@ -17,4 +17,4 @@ Where
 
 The application has a slider for selecting APR, when you move the slider you will see APR and EMI printed on top left of the plot.
 
-The [Slidify](http://slidify.org/) presentation is at
+The Rpubs presentation is available at http://rpubs.com/Amishab/EMIShinyApp
