@@ -10,9 +10,11 @@ EMI is calculated like...
 E = P * r * (((1+r)^n) / (((1+r)^n) -1))
 
 Where 
-E = EMI
+E = EMI (Equal Monthly Instalment)
 P = principal
 r = interest rate per month
 n = number of months
+
+The application has a slider for selecting APR, when you move the slider you will see APR and EMI printed on top left of the plot.
 
 The [Slidify](http://slidify.org/) presentation is at
