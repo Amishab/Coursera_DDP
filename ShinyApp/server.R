@@ -12,14 +12,12 @@ shinyServer(
       
       EMI <- round(E,2)
   
+      plot (EMIData$Interest,EMIData$EMI,type = "h", xlab='APR', ylab = "EMI" , xlim = c(3,10),
+            ylim =c(20,100), col='blue',main="EMI Chart")
       
-      plot (EMIData$Interest,type = "h", xlab='APR', ylab = "Frequency" , xlim = c(3,10),
-                 col='green',main="Histogram")
-      #barplot(height=EMIData$EMI, names.arg=EMIData$Interest,xlab='APR', ylab = 'EMI', 
-       #      col='green',main="Barplot")
       lines( c(rate, rate), c(0, 100), col="red",lwd=5)
-      text( 5,10,paste("APR = ", rate))
-      text(5, 9,paste("EMI/$10000 for 30 years = ", EMI))
+      text(5, 100, paste("APR = ", rate), pos=2)
+      text(5, 90,paste("EMI/$10000 for 30 years = ", EMI))
       
       
     })
